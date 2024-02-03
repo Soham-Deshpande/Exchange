@@ -1,2 +1,2 @@
 # Exchange
-Building an Exhchange using modern Orderbook matching algorithms
+Building an Exchange using modern Orderbook matching algorithms
