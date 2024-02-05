@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+%\usepackage{lingmacros}
+%\usepackage{tree-dvips}
+\begin{document}
+
+\title{Designing an Exchange}
+\author{Soham Deshpande}
+\maketitle
+\clearpage
+
+\tableofcontents
+
+\clearpage
+\section{Introduction}
+The aim of this project is to provide insight into the inner workings of an 
+exchange as well as the orderbook matching algorithms used. I have chosen
+to conduct this in C to force myself to learn the language. C does also provide
+benefits such as fast execution speeds and direct access to memory, both which
+are core to creating a good exchange. This documentation will discuss the 
+choices made as well explanations of the relevant algorithms used. Eventually,
+a server will be set up to allow multiple agents to trade, mimicking a real
+exchange. 
+  
+
+\section{Order Types}
+We have decided to select a few order types that can be excecuted, these reflect
+the most common trades made and will allow the user to have enough flexibilty
+to be useful. Though not in surplus of features, the aim of this project is on
+the order matching algorithm, not on the wants of the user.
+\\
+The different types being offered include:
+\begin{enumerate}
+  \item Market Orders
+  \item Limit Orders
+  \item Stop-loss Orders
+  \item Stop-limit Orders
+  \item All or None Orders 
+  \item Immediate or Cancel
+  \item Fill or Kill
+  \item Good 'Til Cancelled
+\end{enumerate}
+
+\subsubsection{Market Orders}
+These are the most trivial of orders, simply buying or selling at or near the 
+posted price. These guarantee a position in market and will be excecuted as 
+soon as possible. 
+
+\subsubsection{Limit Orders}
+Limit orders can be thought of as pending orders that are only executed once a 
+certain condition or limit is reached. This limit is based on the price of the
+security being traded. The order will be cancelled if the price is not met 
+whilst trying to sell or buy at the pre-determined level. 4 types of Limit 
+orders exist: Buy limit, Sell limit, Buy stop, and Sell stop. 
+$${Explain}$$
+
+\section{Orderbook Design}
+
+\section{Orderbook Matching}
+
+\section{Exchange Design}
+
+\section{Networking}
+
+\section{C Code}
+
+\end{document}
