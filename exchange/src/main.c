@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "log/log.h"
 
 int main(int argc, char **argv) {
-  puts("hello, exchange.");
+  ECH_LOG_DEBUG("Hello, Exchange.");
   return 0;
 }
