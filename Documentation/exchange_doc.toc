@@ -2,8 +2,17 @@
 \contentsline {section}{\numberline {2}Order Types}{3}{}%
 \contentsline {subsubsection}{\numberline {2.0.1}Market Orders}{3}{}%
 \contentsline {subsubsection}{\numberline {2.0.2}Limit Orders}{4}{}%
+\contentsline {subsubsection}{\numberline {2.0.3}Stop-loss Orders}{4}{}%
+\contentsline {subsubsection}{\numberline {2.0.4}Immediate or Cancel}{4}{}%
+\contentsline {subsubsection}{\numberline {2.0.5}Fill or Kill}{4}{}%
+\contentsline {subsubsection}{\numberline {2.0.6}Good 'Till Cancelled}{4}{}%
 \contentsline {section}{\numberline {3}Orderbook Design}{4}{}%
-\contentsline {section}{\numberline {4}Orderbook Matching}{4}{}%
-\contentsline {section}{\numberline {5}Exchange Design}{4}{}%
-\contentsline {section}{\numberline {6}Networking}{4}{}%
-\contentsline {section}{\numberline {7}C Code}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Central Limit Order Book}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Automated Market Maker Model}{5}{}%
+\contentsline {section}{\numberline {4}Central Limit Order Book}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Equilibrium}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Spread}{5}{}%
+\contentsline {section}{\numberline {5}Orderbook Matching}{5}{}%
+\contentsline {section}{\numberline {6}Exchange Design}{5}{}%
+\contentsline {section}{\numberline {7}Networking}{5}{}%
+\contentsline {section}{\numberline {8}C Code}{5}{}%

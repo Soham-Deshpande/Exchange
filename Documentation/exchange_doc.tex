@@ -4,7 +4,7 @@
 \begin{document}
 
 \title{Designing an Exchange}
-\author{Soham Deshpande}
+\author{Soham Deshpande and Ellis Walker}
 \maketitle
 \clearpage
 
@@ -34,7 +34,6 @@ The different types being offered include:
   \item Limit Orders
   \item Stop-loss Orders
   \item Stop-limit Orders
-  \item All or None Orders 
   \item Immediate or Cancel
   \item Fill or Kill
   \item Good 'Til Cancelled
@@ -51,9 +50,48 @@ certain condition or limit is reached. This limit is based on the price of the
 security being traded. The order will be cancelled if the price is not met 
 whilst trying to sell or buy at the pre-determined level. 4 types of Limit 
 orders exist: Buy limit, Sell limit, Buy stop, and Sell stop. 
-$${Explain}$$
+\\
+Buy Limits allow you to purchase a given security at or below the specified 
+price. To complement that, the Sell limit allows you to sell the given security
+at or above the specified price. 
+Buy stops allow you to buy a given security at a price above the current
+market bid price. Therefore the Sell stop is in place to allow a security to 
+be sold at a price below the current market ask.
+
+\subsubsection{Stop-loss Orders}
+This order type, unlike Market and Limit orders, remain inactive until a certain
+price threshold is met. At this point is behaves like a market order.
+
+\subsubsection{Immediate or Cancel}
+This order dictates that the whatever amount of an order can be fulfilled must 
+be done as soon as possible with the rest of the order being cancelled.
+
+
+\subsubsection{Fill or Kill}
+This one is similar to Immediate or Cancel however either the entire order must
+be executed in a short amount of time otherwise be cancelled. 
+
+
+\subsubsection{Good 'Till Cancelled}
+This order applies a time restriction so that the order will remain active 
+until the order is cancelled by the user.
+
 
 \section{Orderbook Design}
+The orderbook design is crucial, one we must consider carefully encorporating
+the use case for our exchange. The two main branches we could explore is 
+Central Limit Order Book (CLOB) or the Automated Market Maker Model (AMM). 
+
+\subsection{Central Limit Order Book} 
+
+\subsection{Automated Market Maker Model}
+
+
+\section{Central Limit Order Book}
+
+\subsection{Equilibrium}
+
+\subsection{Spread}
 
 \section{Orderbook Matching}
 
