@@ -10,9 +10,9 @@
 \contentsline {subsection}{\numberline {3.1}Central Limit Order Book}{5}{}%
 \contentsline {subsection}{\numberline {3.2}Automated Market Maker Model}{5}{}%
 \contentsline {section}{\numberline {4}Central Limit Order Book}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Equilibrium}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Spread}{5}{}%
-\contentsline {section}{\numberline {5}Orderbook Matching}{5}{}%
-\contentsline {section}{\numberline {6}Exchange Design}{5}{}%
-\contentsline {section}{\numberline {7}Networking}{5}{}%
-\contentsline {section}{\numberline {8}C Code}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Equilibrium}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Spread}{6}{}%
+\contentsline {section}{\numberline {5}Orderbook Matching}{6}{}%
+\contentsline {section}{\numberline {6}Exchange Design}{6}{}%
+\contentsline {section}{\numberline {7}Networking}{6}{}%
+\contentsline {section}{\numberline {8}C Code}{6}{}%

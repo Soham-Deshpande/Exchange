@@ -1,4 +1,10 @@
 \documentclass[12pt]{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+
 %\usepackage{lingmacros}
 %\usepackage{tree-dvips}
 \begin{document}
@@ -83,11 +89,52 @@ the use case for our exchange. The two main branches we could explore is
 Central Limit Order Book (CLOB) or the Automated Market Maker Model (AMM). 
 
 \subsection{Central Limit Order Book} 
+A limit order book is a method of containing all orders sent to the market,
+organised by the sign of the order, time stamp, quanitity and other relevant 
+factors. A LOB will contains all the information available on a  specific market
+and reflects the movements of the market under influence of all 
+heterogeneous agents involved. These faciliate trades between agents, matching 
+relevant buyers to sellers. In the age of electronic trading, pressure falls on 
+exchanges to provide real-time access to the LOB to market participants. The
+following sections will discuss and mathematically describle LOB design
+and dynamics.
+
 
 \subsection{Automated Market Maker Model}
 
 
 \section{Central Limit Order Book}
+A central limit order book can be described precisely using mathematics, 
+providing a platform to conduct analysis upon.\\
+Firstmost, let's define an order sent to the exchange as: 
+\begin{definition}
+An order $x = (p_x,\omega_x,t_x)$ can be defined as an order submitted at time 
+$t_x$ with price $p_x$  and size $\omega_x > 0$. This can be seen as a commitment to 
+ sell up to $| \omega_x |$ units at a price no lower than $p_x$. Respectively,
+a buy order can be interpreted from a size of $\omega_x < 0$.  
+\end{definition}
+Secondly we need to define the lot size and tick size in the LOB. 
+ 
+ \begin{definition}
+ The lot size $\sigma$ of an LOB is the smallest amount of a given asset that
+   can be traded within it. Orders must be sent as multiples of $\sigma$, given 
+   as size $\omega_x \in \{\pm k\sigma | k = 1,2,3 ...\}$.
+ \end{definition}
+
+ \begin{definition}
+ The tick size $\pi$ of an LOB is the smallest denomination of price movements 
+   allowed for a particular security. All orders submitted must adhere to an 
+   accuracy of $\pi$.
+ \end{definition}
+
+Lastly, we can define the fundemental platform, the LOB.
+
+\begin{definition}
+  An LOB $\mathcal{L}$ is the set of all active orders in a market at time $t$.
+\end{definition}
+
+We can proceed to explore the terms bid price, ask price, mid price and bid-ask 
+spread, all crucial to understanding the dynamics of an LOB. 
 
 \subsection{Equilibrium}
 
